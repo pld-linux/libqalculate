@@ -1,5 +1,5 @@
 Summary:	A modern multi-purpose calculator library
-Summary(pl):	Nowoczesna, wielozadniowa biblioteka kalkulatora
+Summary(pl):	Nowoczesna, wielozadaniowa biblioteka kalkulatora
 Name:		libqalculate
 Version:	0.9.4
 Release:	1
@@ -25,7 +25,7 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 A modern multi-purpose calculator library.
 
 %description -l pl
-Nowoczesna, wielozadniowa biblioteka kalkulatora
+Nowoczesna, wielozadaniowa biblioteka kalkulatora.
 
 %package devel
 Summary:	Header files for qalculate library
