@@ -12,13 +12,12 @@ BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	cln-devel >= 1.1
 BuildRequires:	glib2-devel >= 1:2.0.0
-BuildRequires:	gmp-devel
 BuildRequires:	libstdc++-devel
-BuildRequires:	libtool
+BuildRequires:	libtool >= 2:1.5
 BuildRequires:	libxml2-devel >= 1:2.3.8
 BuildRequires:	ncurses-devel
+BuildRequires:	pkgconfig
 BuildRequires:	readline-devel
-BuildRequires:	zlib-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -32,6 +31,9 @@ Summary:	Header files for qalculate library
 Summary(pl):	Pliki nag³ówkowe biblioteki qalculate
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
+Requires:	cln-devel >= 1.1
+Requires:	glib2-devel >= 1:2.0.0
+Requires:	libxml2-devel >= 1:2.3.8
 
 %description devel
 Header files for qalculate library.
