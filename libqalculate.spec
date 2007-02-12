@@ -1,5 +1,5 @@
 Summary:	A modern multi-purpose calculator library
-Summary(pl.UTF-8):   Nowoczesna, wielozadaniowa biblioteka kalkulatora
+Summary(pl.UTF-8):	Nowoczesna, wielozadaniowa biblioteka kalkulatora
 Name:		libqalculate
 Version:	0.9.4
 Release:	1
@@ -28,7 +28,7 @@ Nowoczesna, wielozadaniowa biblioteka kalkulatora.
 
 %package devel
 Summary:	Header files for qalculate library
-Summary(pl.UTF-8):   Pliki nagłówkowe biblioteki qalculate
+Summary(pl.UTF-8):	Pliki nagłówkowe biblioteki qalculate
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 Requires:	cln-devel >= 1.1
@@ -43,7 +43,7 @@ Pliki nagłówkowe biblioteki qalculate.
 
 %package static
 Summary:	Static qalculate library
-Summary(pl.UTF-8):   Statyczna biblioteka qalculate
+Summary(pl.UTF-8):	Statyczna biblioteka qalculate
 Group:		Development/Libraries
 Requires:	%{name}-devel = %{version}-%{release}
 
