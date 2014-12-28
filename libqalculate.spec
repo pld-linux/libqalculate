@@ -11,7 +11,7 @@ URL:		http://qalculate.sourceforge.net/
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	cln-devel >= 1.3
-BuildRequires:	gettext-devel
+BuildRequires:	gettext-tools
 BuildRequires:	glib2-devel >= 1:2.0.0
 BuildRequires:	intltool
 BuildRequires:	libstdc++-devel
