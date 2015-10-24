@@ -1,0 +1,42 @@
+TODO:
+- LVL
+- LTL
+
+--- libqalculate-0.9.7/data/currencies.xml	2010-01-05 17:26:32.000000000 +0200
++++ libqalculate-0.9.7/data/currencies.xml	2015-10-24 19:53:16.000000000 +0300
+@@ -161,14 +161,6 @@
+       <names>ar:CZK</names>
+       <names xml:lang="zh_CN">ar:CZK</names>
+     </builtin_unit>
+-    <builtin_unit name="EEK">
+-      <title>Estonian Kroon</title>
+-      <title xml:lang="nl">Estlandse kroon</title>
+-      <title xml:lang="sv">Estoniska kroon</title>
+-      <title xml:lang="zh_CN">爱沙尼亚克鲁恩</title>
+-      <names>ar:EEK</names>
+-      <names xml:lang="zh_CN">ar:EEK</names>
+-    </builtin_unit>
+     <builtin_unit name="HUF">
+       <title>Hungarian Forint</title>
+       <title xml:lang="nl">Hongaarse forint</title>
+@@ -486,5 +478,18 @@
+         <exponent>1</exponent>
+       </base>
+     </unit>
++    <unit type="alias">
++      <title>Estonian Kroon</title>
++      <title xml:lang="nl">Estlandse kroon</title>
++      <title xml:lang="sv">Estoniska kroon</title>
++      <title xml:lang="zh_CN">爱沙尼亚克鲁恩</title>
++      <names>ar:EEK,kroon</names>
++      <names xml:lang="zh_CN">ar:EEK,kroon</names>
++      <base>
++        <unit>EUR</unit>
++        <relation>1/15.6466</relation>
++        <exponent>1</exponent>
++      </base>
++    </unit>
+   </category>
+-</QALCULATE>
+\ No newline at end of file
++</QALCULATE>

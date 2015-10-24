@@ -8,6 +8,7 @@ Group:		Libraries
 Source0:	http://downloads.sourceforge.net/qalculate/%{name}-%{version}.tar.gz
 # Source0-md5:	a1507ab862f4ad9852788619aada35cd
 Patch0:		pkgconfig_private.patch
+Patch1:		currencies.patch
 URL:		http://qalculate.sourceforge.net/
 BuildRequires:	autoconf
 BuildRequires:	automake
@@ -59,6 +60,7 @@ Statyczna biblioteka qalculate.
 %prep
 %setup -q
 %patch0 -p1
+%patch1 -p1
 
 %build
 %{__libtoolize}
