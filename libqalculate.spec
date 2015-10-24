@@ -2,7 +2,7 @@ Summary:	A modern multi-purpose calculator library
 Summary(pl.UTF-8):	Nowoczesna, wielozadaniowa biblioteka kalkulatora
 Name:		libqalculate
 Version:	0.9.7
-Release:	2
+Release:	3
 License:	GPL
 Group:		Libraries
 Source0:	http://downloads.sourceforge.net/qalculate/%{name}-%{version}.tar.gz
