@@ -5,7 +5,7 @@ Version:	0.9.7
 Release:	2
 License:	GPL
 Group:		Libraries
-Source0:	http://downloads.sourceforge.net/project/qalculate/%{name}/%{name}-%{version}/%{name}-%{version}.tar.gz
+Source0:	http://downloads.sourceforge.net/qalculate/%{name}-%{version}.tar.gz
 # Source0-md5:	a1507ab862f4ad9852788619aada35cd
 URL:		http://qalculate.sourceforge.net/
 BuildRequires:	autoconf
@@ -69,9 +69,11 @@ Statyczna biblioteka qalculate.
 
 %install
 rm -rf $RPM_BUILD_ROOT
-
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
+
+# obsoleted my .pc file
+%{__rm} $RPM_BUILD_ROOT%{_libdir}/libqalculate.la
 
 %{__rm} -r $RPM_BUILD_ROOT%{_docdir}/%{name}-%{version}
 
@@ -86,18 +88,17 @@ rm -rf $RPM_BUILD_ROOT
 %files -f %{name}.lang
 %defattr(644,root,root,755)
 %doc AUTHORS ChangeLog NEWS README TODO
-%attr(755,root,root) %{_bindir}/*
-%attr(755,root,root) %ghost %{_libdir}/lib*.so.?
-%attr(755,root,root) %{_libdir}/lib*.so.*.*.*
+%attr(755,root,root) %{_bindir}/qalc
+%attr(755,root,root) %{_libdir}/libqalculate.so.*.*.*
+%attr(755,root,root) %ghost %{_libdir}/libqalculate.so.5
 %{_datadir}/qalculate
 
 %files devel
 %defattr(644,root,root,755)
-%attr(755,root,root) %{_libdir}/lib*.so
-%{_libdir}/lib*.la
+%{_libdir}/libqalculate.so
 %{_includedir}/%{name}
-%{_pkgconfigdir}/*.pc
+%{_pkgconfigdir}/libqalculate.pc
 
 %files static
 %defattr(644,root,root,755)
-%{_libdir}/lib*.a
+%{_libdir}/libqalculate.a
