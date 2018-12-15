@@ -1,15 +1,15 @@
 Summary:	A modern multi-purpose calculator library
 Summary(pl.UTF-8):	Nowoczesna, wielozadaniowa biblioteka kalkulatora
 Name:		libqalculate
-Version:	0.9.7
-Release:	4
+Version:	2.8.2
+Release:	1
 License:	GPL
 Group:		Libraries
-Source0:	http://downloads.sourceforge.net/qalculate/%{name}-%{version}.tar.gz
-# Source0-md5:	a1507ab862f4ad9852788619aada35cd
+Source0:	https://github.com/Qalculate/%{name}/releases/download/v%{version}/%{name}-%{version}.tar.gz 
+# Source0-md5:	e6bb2bfb12a9e4253cbcd01bb31f1ea5
 Patch0:		pkgconfig_private.patch
 Patch1:		currencies.patch
-URL:		http://qalculate.sourceforge.net/
+URL:		http://qalculate.github.io/
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	cln-devel >= 1.3
@@ -59,8 +59,8 @@ Statyczna biblioteka qalculate.
 
 %prep
 %setup -q
-%patch0 -p1
-%patch1 -p1
+#%%patch0 -p1
+#%%patch1 -p1
 
 %build
 %{__libtoolize}
@@ -79,7 +79,7 @@ rm -rf $RPM_BUILD_ROOT
 # obsoleted my .pc file
 %{__rm} $RPM_BUILD_ROOT%{_libdir}/libqalculate.la
 
-%{__rm} -r $RPM_BUILD_ROOT%{_docdir}/%{name}-%{version}
+#%%{__rm} -r $RPM_BUILD_ROOT%{_docdir}/%{name}-%{version}
 
 %find_lang %{name}
 
@@ -94,7 +94,7 @@ rm -rf $RPM_BUILD_ROOT
 %doc AUTHORS ChangeLog NEWS README TODO
 %attr(755,root,root) %{_bindir}/qalc
 %attr(755,root,root) %{_libdir}/libqalculate.so.*.*.*
-%attr(755,root,root) %ghost %{_libdir}/libqalculate.so.5
+%attr(755,root,root) %ghost %{_libdir}/libqalculate.so.20
 %{_datadir}/qalculate
 
 %files devel
