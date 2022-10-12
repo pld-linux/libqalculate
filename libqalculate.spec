@@ -1,12 +1,12 @@
 Summary:	A modern multi-purpose calculator library
 Summary(pl.UTF-8):	Nowoczesna, wielozadaniowa biblioteka kalkulatora
 Name:		libqalculate
-Version:	3.1.0
-Release:	7
+Version:	4.3.0
+Release:	1
 License:	GPL
 Group:		Libraries
 Source0:	https://github.com/Qalculate/%{name}/releases/download/v%{version}/%{name}-%{version}.tar.gz 
-# Source0-md5:	408e24e73be18ee59dd5f997f1dc5a95
+# Source0-md5:	f287dc5b09173b1cab65142f9e5e7f88
 Patch0:		pkgconfig_private.patch
 Patch1:		currencies.patch
 URL:		http://qalculate.github.io/
@@ -94,8 +94,9 @@ rm -rf $RPM_BUILD_ROOT
 %doc AUTHORS ChangeLog NEWS README TODO
 %attr(755,root,root) %{_bindir}/qalc
 %attr(755,root,root) %{_libdir}/libqalculate.so.*.*.*
-%attr(755,root,root) %ghost %{_libdir}/libqalculate.so.21
+%attr(755,root,root) %ghost %{_libdir}/libqalculate.so.22
 %{_datadir}/qalculate
+%{_mandir}/man1/qalc.1*
 
 %files devel
 %defattr(644,root,root,755)
