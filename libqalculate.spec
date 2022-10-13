@@ -19,6 +19,7 @@ BuildRequires:	intltool
 BuildRequires:	libstdc++-devel
 BuildRequires:	libtool >= 2:1.5
 BuildRequires:	libxml2-devel >= 1:2.3.8
+BuildRequires:	mpfr-devel
 BuildRequires:	ncurses-devel
 BuildRequires:	pkgconfig
 BuildRequires:	readline-devel
@@ -97,7 +98,7 @@ rm -rf $RPM_BUILD_ROOT
 %attr(755,root,root) %ghost %{_libdir}/libqalculate.so.22
 %{_datadir}/qalculate
 %{_mandir}/man1/qalc.1*
-%{_docdir}/libqualculate/
+%{_docdir}/libqalculate/
 
 %files devel
 %defattr(644,root,root,755)
