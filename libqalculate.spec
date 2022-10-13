@@ -5,7 +5,7 @@ Version:	4.3.0
 Release:	1
 License:	GPL
 Group:		Libraries
-Source0:	https://github.com/Qalculate/%{name}/releases/download/v%{version}/%{name}-%{version}.tar.gz 
+Source0:	https://github.com/Qalculate/libqalculate/releases/download/v%{version}/%{name}-%{version}.tar.gz
 # Source0-md5:	f287dc5b09173b1cab65142f9e5e7f88
 Patch0:		pkgconfig_private.patch
 Patch1:		currencies.patch
@@ -97,6 +97,7 @@ rm -rf $RPM_BUILD_ROOT
 %attr(755,root,root) %ghost %{_libdir}/libqalculate.so.22
 %{_datadir}/qalculate
 %{_mandir}/man1/qalc.1*
+%{_docdir}/libqualculate
 
 %files devel
 %defattr(644,root,root,755)
