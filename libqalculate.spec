@@ -97,7 +97,7 @@ rm -rf $RPM_BUILD_ROOT
 %attr(755,root,root) %ghost %{_libdir}/libqalculate.so.22
 %{_datadir}/qalculate
 %{_mandir}/man1/qalc.1*
-%{_docdir}/libqualculate
+%{_docdir}/libqualculate/
 
 %files devel
 %defattr(644,root,root,755)
