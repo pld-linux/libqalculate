@@ -1,12 +1,12 @@
 Summary:	A modern multi-purpose calculator library
 Summary(pl.UTF-8):	Nowoczesna, wielozadaniowa biblioteka kalkulatora
 Name:		libqalculate
-Version:	5.1.1
+Version:	5.2.0
 Release:	1
 License:	GPL
 Group:		Libraries
 Source0:	https://github.com/Qalculate/libqalculate/releases/download/v%{version}/%{name}-%{version}.tar.gz
-# Source0-md5:	6a1905535cfe19fd94a27998c4267829
+# Source0-md5:	d378112794a24d6af1092e0c25f0ff97
 URL:		https://qalculate.github.io/
 BuildRequires:	autoconf
 BuildRequires:	automake
